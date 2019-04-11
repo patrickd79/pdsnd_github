@@ -2,7 +2,9 @@ Created 4/3/19
 
 Bike Share Python Project
 
-This is a python program that takes user input and returns data relating to bike share usage in 3 cities. The cities where the data comes from are: Chicago, New York, and Washington D.C.. The data can be parsed by city, day of the week, and month. It returns statistics regarding usage by time, locations, and users. 
+This is a python program that takes user input and returns data relating to bike share usage in 3 cities. The cities where the data comes from are: Chicago, New York, and Washington D.C.. The data can be parsed by city, day of the week, and month. It returns statistics regarding usage by time, locations, and users. There is a lack of gender and birth year data in the washington.csv file. 
+
+The user has the chance to veiw 5 lines of raw data upon request via a user input option. 
 
 
 
