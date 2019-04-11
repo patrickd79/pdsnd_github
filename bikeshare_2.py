@@ -228,12 +228,12 @@ def main():
     def  start_over():  
         restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
         while True:
-            if restart == 'yes':
+            if restart == 'yep':
                 main()
-            elif restart == 'no':
+            elif restart == 'nope':
                 exit()
             else:
-                print("Please enter either 'yes', or 'no'.")
+                print("Please enter either 'yep', or 'nope'.")
                 start_over()
                 break
     start_over()            
