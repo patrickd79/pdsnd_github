@@ -10,7 +10,6 @@ def main():
                 'washington': 'washington.csv' }
 
     cities = ['chicago','new york city','washington']
-    #day_of_week = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 
 
     print('Hello! Let\'s explore some US bikeshare data!')
@@ -30,17 +29,7 @@ def main():
                 break
             return city
 
-    
-
-        
-        
-        
-        # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-        
-    #months = ['1','2','3','4','5','6']
-        
-        # get user input for month (all, january, february, ... , june)
-        #months = ['1','2','3','4','5','6']
+    # get user input for month (all, january, february, ... , june)
     def get_month():
         month_answer = input("Which month would you like data for? Please enter number for month(1-January, 2-February, 3-March, 4-April, 5-May,  or 6-June) or 'all' to return data for all months.: ")
 
@@ -57,8 +46,6 @@ def main():
                 break
         return month_answer
         # get user input for day of week (all, monday, tuesday, ... sunday)
-        #days_of_week = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-        #day_answer = input("Which day of the week do you want data for?(all lowercase): ")
     def get_day():
         day_answer = input("Which day of the week do you want data for?: ")
 
@@ -187,8 +174,6 @@ def main():
         print(df['travel_time'].mean())
         
         #display total travel time
-        #print(travel_time)
-        #print(total_travel_time)
         # display mean travel time
 
 
