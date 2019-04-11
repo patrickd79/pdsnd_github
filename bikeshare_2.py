@@ -134,10 +134,10 @@ def main():
         print('\nCalculating The Most Popular Stations and Trip...\n')
         start_time = time.time()
         #display most commonly used start station
-        most_common_start_station = df['Start Station'].mode()[0]
+        most_common_beginning_station = df['Start Station'].mode()[0]
         print('The most common station to start a trip is:') 
         
-        print(most_common_start_station)
+        print(most_common_beginning_station)
 
         #display most commonly used end station
         most_common_end_station = df['End Station'].mode()[0]
@@ -146,10 +146,10 @@ def main():
         print(most_common_end_station)
 
         #display most frequent combination of start station and end station trip
-        most_common_station_combo = df.groupby(['Start Station', 'End Station']).size().sort_values(ascending=False).head()
+        most_common_combination_of_stations = df.groupby(['Start Station', 'End Station']).size().sort_values(ascending=False).head()
         print('The most common combinations of starting stations and ending stations are:') 
         
-        print(most_common_station_combo)
+        print(most_common_combination_of_stations)
 
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
@@ -213,12 +213,12 @@ def main():
     def  start_over():  
         restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
         while True:
-            if restart == 'yes':
+            if restart == 'yep':
                 main()
-            elif restart == 'no':
+            elif restart == 'nope':
                 exit()
             else:
-                print("Please enter either 'yes', or 'no'.")
+                print("Please enter either 'yep', or 'nope'.")
                 start_over()
                 break
     start_over()            
